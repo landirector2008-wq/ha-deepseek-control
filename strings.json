@@ -1,0 +1,23 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure DeepSeek Integration",
+        "data": {
+          "api_key": "OpenRouter API Key",
+          "sensors": "Sensors",
+          "actuators": "Actuators",
+          "model": "AI Model",
+          "max_tokens": "Max Tokens",
+          "temperature": "Temperature"
+        }
+      }
+    },
+    "error": {
+      "invalid_api_key_format": "API key must start with 'sk-'"
+    },
+    "abort": {
+      "already_configured": "Integration is already configured"
+    }
+  }
+}

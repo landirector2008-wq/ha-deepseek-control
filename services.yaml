@@ -1,0 +1,11 @@
+send_command:
+  name: Send command
+  description: Send a natural language command to DeepSeek to control the home.
+  fields:
+    command:
+      name: Command
+      description: The command for the AI, e.g., 'Maintain 22 degrees in the room'.
+      example: "Maintain 22 degrees in the room"
+      required: true
+      selector:
+        text:
