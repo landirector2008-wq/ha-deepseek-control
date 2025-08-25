@@ -1,12 +1,42 @@
 {
-  "domain": "deepseek_control",
-  "name": "DeepSeek Smart Controller",
+  // Domain name for the integration (must be unique)
+  "domain": "openrouter_ai",
+  
+  // Human-readable name of the integration
+  "name": "OpenRouter AI Automation",
+  
+  // Short description of what the integration does
+  "description": "Natural language home automation using OpenRouter.ai API",
+  
+  // Current version of the integration (follows semantic versioning)
   "version": "1.0.0",
-  "documentation": "https://github.com/your_github/deepseek_control",
-  "issue_tracker": "https://github.com/your_github/deepseek_control/issues",
-  "requirements": ["aiohttp>=3.8.0", "aiofiles>=23.2.0"],
-  "dependencies": [],
-  "codeowners": ["@your_github_username"],
+  
+  // Required Home Assistant version
+  "homeassistant": "2023.0.0",
+  
+  // Configuration flow support (enables UI-based setup)
   "config_flow": true,
-  "iot_class": "cloud_polling"
+  
+  // Documentation URL for the integration
+  "documentation": "https://github.com/your-username/openrouter-ai",
+  
+  // Issue tracker URL for reporting bugs
+  "issue_tracker": "https://github.com/your-username/openrouter-ai/issues",
+  
+  // Python package dependencies required for this integration
+  "requirements": [
+    "aiohttp>=3.8.0"  // Required for async HTTP requests to OpenRouter API
+  ],
+  
+  // GitHub usernames of maintainers who can be tagged in issues
+  "codeowners": [
+    "@your-username"
+  ],
+  
+  // IoT classification for Home Assistant
+  // "cloud_polling" indicates this integration connects to a cloud service
+  "iot_class": "cloud_polling",
+  
+  // Integration quality scale (optional but recommended)
+  "quality_scale": "silver"
 }
