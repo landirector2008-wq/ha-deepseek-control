@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "documentation": "https://github.com/your_github/deepseek_control",
   "issue_tracker": "https://github.com/your_github/deepseek_control/issues",
-  "requirements": ["aiohttp>=3.8.0", "voluptuous>=0.13.1"],
+  "requirements": ["aiohttp>=3.8.0", "aiofiles>=23.2.0"],
   "dependencies": [],
   "codeowners": ["@your_github_username"],
   "config_flow": true,
