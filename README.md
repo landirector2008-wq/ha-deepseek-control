@@ -11,6 +11,7 @@ This integration allows you to control your Home Assistant entities using natura
 - **Flexible Triggering**: Time-based periodic execution or event-based triggering
 - **Secure Configuration**: API key management through OpenRouter's platform
 - **Free Tier Friendly**: Works with OpenRouter's free models with clear rate limit indicators
+- **Smart Rate Limit Handling**: Automatic pause and recovery when API limits are exceeded
 
 ## 🚀 Getting Started
 
@@ -120,6 +121,15 @@ ai_automator:
 - Check the integration's log for execution details
 - Home Assistant's logbook will show AI-triggered actions
 
+### Rate Limit Handling
+
+This integration automatically handles OpenRouter's rate limits:
+
+1. **Automatic Pause**: When rate limits are exceeded, the integration pauses automatically
+2. **Smart Retry**: Uses exponential backoff or server-suggested wait times
+3. **Notifications**: Creates persistent notifications in Home Assistant
+4. **Self-Recovery**: Automatically resumes operation after rate limit periods
+
 ### Common Issues
 
 1. **Rate limiting errors**:
@@ -153,6 +163,15 @@ ai_automator:
 - OpenRouter passes through provider pricing without markup 
 - Set credit limits on your API keys to control spending 
 
+## ❤️ Supporting This Project
+
+If you find this integration useful and would like to support its continued development, consider making a contribution:
+
+- **Bitcoin**: bc1qfekxxztsl4ega778v2y9pe5ftrstdswsedrjw2
+- **Ethereum**: 0xc076819D30D2277d067dE434CCCFD90BeE1A667c
+
+Your support helps maintain and improve this integration for the entire Home Assistant community!
+
 ## 🛠 Development
 
 This integration uses OpenRouter's API which is compatible with OpenAI's API format:
@@ -180,6 +199,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - Thanks to [OpenRouter.ai](https://openrouter.ai) for providing unified access to multiple LLM APIs
 - Home Assistant community for integration guidance and support
-```
-
-This README provides comprehensive documentation for your integration while incorporating the specific information about OpenRouter's API limitations and usage guidelines. The tone is professional yet approachable as requested.
+- All contributors and users who help improve this integration
